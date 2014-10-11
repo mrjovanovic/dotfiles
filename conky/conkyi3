@@ -1,0 +1,54 @@
+out_to_x no
+own_window no
+out_to_console yes
+background no
+max_text_width 0
+# Update interval in seconds
+update_interval 3
+total_run_times 0
+override_utf8_locale yes
+
+TEXT
+
+[
+#CMUS Music deliciousness
+{
+"full_text" : "${execi 2 ~/src/conky/i3status_cmus.sh}",
+"color" : "\#b72f62"
+},
+
+#Prints keyboard layout
+{
+"full_text" : "${exec ~/src/xkblayout-state/xkblayout-state print %s}",
+"color" : "\#CCD7AA" 
+},
+
+#Finds current volume. May need modified depending on your setup
+{
+"full_text" : " ${fs_free /media/j0vke/Data}" ,
+"color" : "\#ffff4f"
+},
+
+#CPU percentage
+{
+"full_text" : " ${cpu}%",
+"color" : "\#e6555f"
+},
+
+#Volume
+{
+"full_text": "  ${exec pactl list sinks | grep "Volume: 0" | cut -d " " -f4 }",
+"color":"\#268BD2"
+},
+
+#Battery (have to figure out how to format battery time)
+{
+"full_text": "${battery_percent}% ${battery_time}"
+},
+
+#Shows time
+{
+"full_text": " ${time %a %d %b} ${time %H:%M} ",
+"color": "\#2fdc57"
+}
+],

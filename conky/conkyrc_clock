@@ -1,0 +1,89 @@
+# Use Xft?
+use_xft yes
+xftfont Nimbus Sans L:size=10
+xftalpha 1
+text_buffer_size 2048
+color0 ffffff
+
+# Update interval in seconds
+update_interval 1
+
+# This is the number of times Conky will update before quitting.
+# Set to zero to run forever.
+total_run_times 0
+
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+own_window_transparent yes
+own_window_argb_value 255
+own_window_type desktop
+own_window_hints sticky,undecorated,skip_taskbar,skip_pager
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+# Minimum size of text area
+minimum_size 10 10
+#maximum_width 800
+
+# Draw shades?
+draw_shades no
+
+# Draw outlines?
+draw_outline no
+
+# Draw borders around text
+draw_borders no
+
+# Stippled borders?
+stippled_borders 0
+
+# border margins
+border_margin 0
+
+# border width
+border_width 0
+
+# Default colors and also border colors
+default_color B1B1B1 #default text color
+default_shade_color black
+#default_outline_color white
+#own_window_colour black
+
+# Text alignment, other possible values are commented
+#alignment top_left
+alignment top_middle
+#alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+
+# Gap between borders of screen and text
+# same thing as passing -x at command line
+gap_x -642
+gap_y 3
+
+# Subtract file system buffers from used memory?
+no_buffers no
+
+# set to yes if you want all text to be in uppercase
+uppercase no
+
+# number of cpu samples to average
+# set to 1 to disable averaging
+cpu_avg_samples 2
+
+# number of net samples to average
+# set to 1 to disable averaging
+net_avg_samples 2
+
+# Force UTF8? note that UTF8 support required XFT
+override_utf8_locale yes
+
+# Add spaces to keep things from moving about?  This only affects certain objects.
+use_spacer right
+
+
+################ INÍCIO DA APARÊNCIA ################
+TEXT
+#${alignc 35}${font Nimbus Sans L:bold:size=10}${color0}${time %H:%M}
+${alignc} ${color0}${font Nimbus Sans L:bold:size=10}${time %A}

@@ -1,0 +1,13 @@
+out_to_x no
+own_window no
+out_to_console yes
+background no
+max_text_width 0
+# Update interval in seconds
+update_interval 2.0
+total_run_times 0
+override_utf8_locale yes
+TEXT
+echo "{\"version\":1}"
+echo "[[] ,"
+${execi 2 ~/src/conky/i3status_cmus.sh}
