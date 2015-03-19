@@ -1,0 +1,54 @@
+"hg7127
+
+loadplugins '\.(js|penta)$'
+group user
+highlight Normal color: black   !important; background: white       !important; font-weight: normal !important; font-family: "Inconsolata LGC" !important; font-size: 9pt !important;
+
+set defsearch=s
+set incfind
+set hlfind
+set vb
+colorscheme simpledark
+" turn off bell
+hi Bell display: none;
+" you've got a tiny display, honey, use it
+set guioptions=C
+map -ex <C-/> :set guioptions=Cs
+map -ex <C-?> :set guioptions=C
+" number of autocomplete items
+set maxitems=15
+" make copypaste work
+"imap -builtin <C-c> <pass>
+"imap -builtin <C-x> <pass>
+"imap -builtin <C-v> <pass>
+" change tabs in a vim way
+map -builtin <C-h> <C-p>
+map -builtin <C-l> <C-n>
+" set hints to homerow
+set hintkeys=asdfglkjh
+"completions s=search l=location bar h=history b=bookmarks
+set complete=l
+
+"yank to system clipboard
+:js editor.defaultRegister="+"
+
+" Mappings
+" -----------------------------------------------------
+map , <Leader>
+nmap -builtin <Leader>p :private winopen<CR>
+nmap -builtin <Leader>b :dialog places<CR>
+nmap -builtin <Leader>d :downloads<CR>
+nmap -builtin <C-S-h> :tabmove! -1<CR>
+nmap -builtin <C-S-l> :tabmove! +1<CR>
+" scroll better
+nmap -builtin J 15j
+nmap -builtin K 15k
+" I hit q way too often
+nmap q <Nop>
+
+
+
+ 
+
+
+" vim: set ft=pentadactyl:

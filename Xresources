@@ -1,0 +1,136 @@
+! Get rid of scrollbar
+xterm.scrollBar: false
+
+Xft.antialias: true
+Xft.autohint: 0
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+!I use two terminals. I know, Im a chump
+xterm.url-launcher: /usr/bin/iceweasel -new-tab
+xterm.url-select.launcher: /usr/bin/iceweasel -new-tab
+xterm.url-select.underline: true
+
+xterm*faceName: Inconsolata LGC
+xterm*faceSize: 10
+xterm*colorBD: #ffffff
+xterm.xftAntialias: true
+xterm*bellIsUrgent: true
+
+! Base16 Railscasts
+! Scheme: Ryan Bates (http://railscasts.com)
+#define base00 #2b2b2b
+#define base01 #272935
+#define base02 #3a4055
+#define base03 #5a647e
+#define base04 #d4cfc9
+#define base05 #e6e1dc
+#define base06 #f4f1ed
+#define base07 #f9f7f3
+#define base08 #da4939
+#define base09 #cc7833
+#define base0A #ffc66d
+#define base0B #a5c261
+#define base0C #519f50
+#define base0D #6d9cbe
+#define base0E #b6b3eb
+#define base0F #bc9458
+
+xterm*foreground: base05
+xterm*background: base00
+xterm*cursorColor: base05
+xterm*color0: base00
+xterm*color1: base08
+xterm*color2: base0B
+xterm*color3: base0A
+xterm*color4: base0D
+xterm*color5: base0E
+xterm*color6: base0C
+xterm*color7: base05
+xterm*color8: base03
+xterm*color9: base08
+xterm*color10: base0B
+xterm*color11: base0A
+xterm*color12: base0D
+xterm*color13: base0E
+xterm*color14: base0C
+xterm*color15: base07
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+xterm*color16: base09
+xterm*color17: base0F
+xterm*color18: base01
+xterm*color19: base02
+xterm*color20: base04
+xterm*color21: base06
+
+
+! URXVT TIME!
+! Get rid of scrollbar
+URxvt.scrollBar: false
+
+Urxvt.fading:100
+
+URxvt.perl-ext-common: ...,url-select
+URxvt.keysym.-u: perl:url-select:select-next
+URxvt.url-launcher: /usr/bin/iceweasel -new-tab
+URxvt.url-select.launcher: /usr/bin/iceweasel -new-tab
+URxvt.url-select.underline: true
+*.URxvt.urgentOnBell: True
+!URxvt.visualBell: True
+
+URxvt*font: xft:Inconsolata LGC:medium:pixelsize=12
+URxvt*boldFont: xft:Inconsolata LGC:bold:pixelsize=12
+URxvt*colorBD: #ffffff
+URxvt.xftAntialias: true
+
+! Base16 Railscasts
+! Scheme: Ryan Bates (http://railscasts.com)
+#define base00 #2b2b2b
+#define base01 #272935
+#define base02 #3a4055
+#define base03 #5a647e
+#define base04 #d4cfc9
+#define base05 #e6e1dc
+#define base06 #f4f1ed
+#define base07 #f9f7f3
+#define base08 #da4939
+#define base09 #cc7833
+#define base0A #ffc66d
+#define base0B #a5c261
+#define base0C #519f50
+#define base0D #6d9cbe
+#define base0E #b6b3eb
+#define base0F #bc9458
+
+!URxvt.depth: 32
+URxvt*foreground: base05
+URxvt*background: base00 
+URxvt*cursorColor: base05
+URxvt*color0: base00
+URxvt*color1: base08
+URxvt*color2: base0B
+URxvt*color3: base0A
+URxvt*color4: base0D
+URxvt*color5: base0E
+URxvt*color6: base0C
+URxvt*color7: base05
+URxvt*color8: base03
+URxvt*color9: base08
+URxvt*color10: base0B
+URxvt*color11: base0A
+URxvt*color12: base0D
+URxvt*color13: base0E
+URxvt*color14: base0C
+URxvt*color15: base07
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+URxvt*color16: base09
+URxvt*color17: base0F
+URxvt*color18: base01
+URxvt*color19: base02
+URxvt*color20: base04
+URxvt*color21: base06
+
